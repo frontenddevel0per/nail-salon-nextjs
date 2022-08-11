@@ -1,0 +1,59 @@
+.modalWindow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+    transition: 1s cubic-bezier(0.2, 1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.25);
+
+    &__main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 350px;
+        height: 400px;
+        background-color: white;
+        background-image: url('../resources/img/modal-bg.png');
+        border-radius: 15px;
+
+        &-wrapper {
+            h1 {
+                font-size: 25px;
+                font-weight: 700;
+            }
+
+            &-buttons {
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+
+                button {
+                    width: 220px;
+                    height: 40px;
+                    background: linear-gradient(238.59deg, #5FD3FF -18.96%, rgba(99, 214, 255, 0) 54.42%), linear-gradient(96.53deg, #FFAE88 -3.19%, #8F93EA 105.27%);
+                    border: none;
+                    border-radius: 17px;
+                    transition: 0.25s all ease;
+
+                    &:hover {
+                        background: linear-gradient(238.59deg, #5FD3FF -18.96%, rgba(99, 214, 255, 0) 54.42%), linear-gradient(96.53deg, #FF8C57 -3.19%, #4F57FB 105.27%);
+                        box-shadow: 0px 20px 50px rgba(246, 209, 235, 0.38);
+                    }
+
+                    p {
+                        margin: 0;
+                        font-size: 24px;
+                        font-weight: 300;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+    }
+}
+

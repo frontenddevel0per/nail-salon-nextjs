@@ -1,0 +1,101 @@
+.services {
+    margin: 0 auto;
+    padding: 96px 48px;
+
+    background-image: url("../resources/img/prices-bg.png");
+    background-size: cover;
+    background-position: center;
+
+    &__header {
+        display: flex;
+        justify-content: center;
+        gap: 100px;
+
+        &-part {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                width: 108px;
+                height: 108px;
+            }
+
+            p {
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 24px;
+                letter-spacing: 0.07em;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    &__main {
+        padding: 96px 48px 48px 48px;
+
+        h1 {
+            font-size: 40px;
+            font-weight: 800;
+            line-height: 48px;
+            text-transform: uppercase;
+        }
+
+        &-container {
+            display: flex;
+            justify-content: center;
+            gap: 32px;
+
+            &-part {
+                width: 300px;
+                height: 460px;
+                border-radius: 34px;
+                padding: 32px 32px 20px 32px;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                background: linear-gradient(180deg, rgba(188, 186, 253, 0.52) 0%, #71BFF0 100%);
+                box-shadow: -5.61851px -5.61851px 22.474px rgba(255, 255, 255, 0.85), 5.61851px 5.61851px 22.474px -2.2474px rgba(91, 115, 134, 0.78), inset 8.98961px 10.1133px 10.1133px rgba(255, 255, 255, 0.33), inset -6.74221px -7.86591px 8.98961px rgba(0, 0, 0, 0.05);
+
+                h2, h3, p {
+                    margin: 0;
+                    line-height: 1.25em;
+                }
+
+                h2 {
+                    font-size: 28px;
+                    font-weight: 800;
+                    text-transform: uppercase;
+                }
+
+                &-prices {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    gap: 14px;
+                }
+
+                button {
+                    width: 140px;
+                    height: 35px;
+                    margin: 0 auto;
+                    border-radius: 70px;
+                    border: none;
+                    background: #FFF;
+
+                    text-align: center;
+                    font-size: 14px;
+                    transition: 0.25s all ease;
+
+                    &:hover {
+                        filter: drop-shadow(0px 0px 6px rgba(0, 0, 0, 0.25));
+                        background: linear-gradient(165.75deg, #BDD8EC 7.77%, #EAEAEA 94.11%);
+                    }
+                }
+                
+            }
+        }
+    }
+}

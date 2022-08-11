@@ -1,0 +1,43 @@
+.footer {
+    background: #807EE3;
+    color: #151515;
+    padding: 32px 0 56px 0;
+
+    &__main {
+        width: 70vw;
+        display: flex;
+        justify-content: left;
+        gap: 96px;
+        margin: 0 auto;
+        border-top: 1px solid #151515;
+        text-align: left;
+
+        &-part {
+            min-width: 200px;
+
+            &-logo {
+                width: 64px;
+                position: relative;
+                left: -16px;
+            }
+
+            p {
+                line-height: 12px;
+                margin: 8px 0;
+                -moz-user-select: none;
+                -khtml-user-select: none;
+                user-select: none;   
+            }
+
+            &-socials {
+                width: 170px;
+                display: flex;
+                justify-content: space-between;
+            }
+
+            &-copyright {
+                font-size: 10px;
+            }
+        }
+    }
+}

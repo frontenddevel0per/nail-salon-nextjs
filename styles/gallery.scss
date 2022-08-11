@@ -1,0 +1,29 @@
+.gallery {
+    padding: 40px 40px 56px 40px;
+    text-align: center;
+
+    &__collage {
+        display: grid;
+        grid-template-columns: 250px 250px 250px 250px;
+        justify-content: center;
+        gap: 40px;
+        padding-bottom: 32px;
+
+        img {
+            border-radius: 20px;
+        }
+    }
+
+    button {
+        font-size: 25px;
+        border: none;
+        background-color: inherit;
+        color: #747474;
+    }:hover {
+        color: #AAA;
+        transition: 0.25s all ease;
+    }:active {
+        color: #525252;
+        transition: cubic-bezier(1, 0, 0, 1) 0.25s all ease;
+    }
+}
