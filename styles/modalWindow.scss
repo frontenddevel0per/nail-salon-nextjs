@@ -13,6 +13,7 @@
 
     &__main {
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         width: 350px;
@@ -20,6 +21,14 @@
         background-color: white;
         background-image: url('../resources/img/modal-bg.png');
         border-radius: 15px;
+
+        .closeIcon {
+            width: 30px;
+            height: 30px;
+            position: relative;
+            top: -80px;
+            right: -150px;
+        }
 
         &-wrapper {
             h1 {

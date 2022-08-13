@@ -18,7 +18,7 @@
             line-height: 24px;
 
             li {
-                padding-right: 1.5em;
+                padding-right: 2em;
                 border-right: 1px solid black;
                 -moz-user-select: none;
                 -khtml-user-select: none;
@@ -44,6 +44,7 @@
 
             :last-child {
                 border-right: none;
+                padding-right: 0;
             }
         }
 
@@ -60,6 +61,12 @@
             font-size: 24px;
             font-weight: 700;
             line-height: 29px;
+        }
+
+        &-logo {
+            display: none;
+            width: 120px;
+            height: 120px;
         }
 
         &-buttons {
@@ -116,7 +123,103 @@
             align-items: center;
             width: 737px;
             height: 808px;
-            background: url('../resources/img/art.png');
+            background: url('../resources/img/art2.png');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            right: -100px;
+
+            &-wrapper {
+                width: 418px;
+                height: 421px;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 1440px) {
+    .header__main {
+        padding-left: 5em;
+    }
+}
+
+@media all and (max-width: 1300px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+
+        &__main {
+            padding: 0;
+
+            &-nav {
+                padding: 0;
+            }
+
+            h3 {
+                text-align: center;
+                padding: 0;
+                margin: 0;
+            }
+
+            &-buttons {
+                align-items: center;
+                padding: 0;
+            }
+
+            &-logo {
+                display: block;
+                margin: 0 auto;
+                padding-bottom: 2em;
+            }
+        }
+
+        &__images {
+            padding-top: 2em;
+
+            &-logo {
+                display: none;
+            }
+
+            &-art {
+                width: 100vw;
+                max-width: 460px;
+                max-height: 380px;
+                position: auto;
+                right: 0;
+
+                &-wrapper {
+                    width: 178px;
+                    height: 178px;
+                    background: url('../resources/img/art2.png');
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 500px) {
+    .header__main {
+        &-nav {
+            font-size: 13px;
+            justify-content: center;
+
+            li {
+                padding-left: 2em;
+            }
+
+            #firstli {
+                padding-left: 0;
+            }
+        }
+
+        h1 {
+            font-size: 40px;
+            margin: 0;
+        }
+
+        h3 {
+            font-size: 16px;
         }
     }
 }

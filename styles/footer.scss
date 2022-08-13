@@ -41,3 +41,19 @@
         }
     }
 }
+
+@media all and (max-width: 1300px) {
+    .footer__main {
+        width: 95vw;
+        min-width: auto;
+        justify-content: space-between;
+        gap: 0;
+    }
+}
+
+@media all and (max-width: 768px) {
+    .footer__main {
+        flex-direction: column;
+        width: 80vw;
+    }
+}

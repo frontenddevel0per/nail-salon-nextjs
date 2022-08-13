@@ -37,10 +37,10 @@ export default function Home() {
   }, [])
 
   if (isModalActive) {
-    document.querySelector('body').style.overflow = "hidden";
+    document.querySelector('body').style.overflowY = "hidden";
     document.querySelector('body').style.marginRight = `${scrollWidth}px`;
   } else if (!isModalActive && pageLoaded) {
-    document.querySelector('body').style.overflow = "visible";
+    document.querySelector('body').style.overflowY = "visible";
     document.querySelector('body').style.marginRight = "0";
   }
 

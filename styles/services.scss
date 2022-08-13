@@ -56,7 +56,7 @@
                 flex-direction: column;
                 justify-content: space-between;
 
-                background: linear-gradient(180deg, rgba(188, 186, 253, 0.52) 0%, #71BFF0 100%);
+                background: linear-gradient(180deg, rgba(188, 186, 253, 1) 0%, #71BFF0 100%);
                 box-shadow: -5.61851px -5.61851px 22.474px rgba(255, 255, 255, 0.85), 5.61851px 5.61851px 22.474px -2.2474px rgba(91, 115, 134, 0.78), inset 8.98961px 10.1133px 10.1133px rgba(255, 255, 255, 0.33), inset -6.74221px -7.86591px 8.98961px rgba(0, 0, 0, 0.05);
 
                 h2, h3, p {
@@ -95,6 +95,41 @@
                     }
                 }
                 
+            }
+        }
+    }
+}
+
+@media all and (max-width: 1300px) {
+    .services {
+        padding-top: 32px;
+
+        &__header {
+            flex-direction: column;
+            gap: 32px;
+        }
+
+        &__main {
+            padding-top: 32px;
+
+            &-container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 768px) {
+    .services__main {
+        padding: 0;
+        &-container {
+            &-part {
+                gap: 16px;
+                width: 80vw;
+                max-width: 300px;
+                height: auto;
+                padding: 16px 16px 10px 16px;
             }
         }
     }

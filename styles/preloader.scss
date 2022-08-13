@@ -52,6 +52,7 @@
 
     &__img {
         width: 10vw;
+        min-width: 100px;
         -webkit-animation: rotate-center 3000ms linear infinite both;
         animation: rotate-center 3000ms linear infinite both;
     }

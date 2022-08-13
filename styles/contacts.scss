@@ -44,7 +44,7 @@
         left: 200px;
 
 
-        background: linear-gradient(180deg, rgba(188, 186, 253, 0.52) 0%, #71BFF0 100%);
+        background: linear-gradient(180deg, rgba(188, 186, 253, 1) 0%, #71BFF0 100%);
         box-shadow: -7.78321px -7.78321px 31.1329px rgba(255, 255, 255, 0.85), 7.78321px 7.78321px 31.1329px -3.11329px rgba(91, 115, 134, 0.78), inset 12.4531px 14.0098px 14.0098px rgba(255, 255, 255, 0.33), inset -9.33986px -10.8965px 12.4531px rgba(0, 0, 0, 0.05);
         
         h1 {
@@ -84,4 +84,25 @@
     }
 }
 
-    
+@media all and (max-width: 1300px) {
+    .contacts {
+        height: auto;
+        padding-bottom: 20px;
+
+        &__mapinfo {
+            margin: 0 auto;
+            z-index: 1;
+            position: static;
+            top: 0;
+            left: 0;
+        }
+    }
+}
+
+@media all and (max-width: 768px) {
+    .contacts__mapinfo {
+        width: 80vw;
+        max-width: 420px;
+        word-wrap: break-word;
+    }
+}

@@ -10,7 +10,7 @@ const Header = () => {
         <div className="header">
             <div className="header__main">
                 <ul className="header__main-nav">
-                    <li>
+                    <li id="firstli">
                         <Link 
                             to="services"
                             spy={true}
@@ -43,6 +43,7 @@ const Header = () => {
                 </ul>
                 <h1>_MANICUTE_</h1>
                 <h3>Студия неординарных ногтей,<br/>услуги бровиста в Москве и<br/>Санкт-Петербурге</h3>
+                <div className="header__main-logo"><Image src={logo} alt="logo" /></div>
                 <div className="header__main-buttons">
                     <a href="#">
                         <button><p>Написать в WhatsApp</p></button>
@@ -67,7 +68,9 @@ const Header = () => {
             <div className="header__images">
                 <div className="header__images-logo"><Image src={logo} alt="logo" /></div>
                 <div className="header__images-art">
-                    <Image src={headerpreview} alt="art" quality="85" />
+                    <div className="header__images-art-wrapper">
+                        <Image src={headerpreview} alt="art" quality="85" />
+                    </div>
                 </div>
             </div>
         </div>
