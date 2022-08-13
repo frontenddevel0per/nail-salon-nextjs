@@ -8,8 +8,8 @@ import vkicon from '../../resources/img/vk-icon.png';
 
 const Contacts = ({setModal}) => {
     const [activeMap, setActiveMap] = useState("spb");
-    const map = (activeMap === "spb") ? <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A7f14a301e121451c450945c4dc75847b6fcefedacdfdd4f59c4decd6308ce279&amp;source=constructor" width="100%" height="600" frameborder="0"></iframe>
-    : <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Af8548a9ac2b91e766c9ea5c2a693b8e2bd4dfbe80847319c865b9c81e838316a&amp;source=constructor" width="100%" height="600" frameborder="0"></iframe> ;
+    const map = (activeMap === "spb") ? <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A7f14a301e121451c450945c4dc75847b6fcefedacdfdd4f59c4decd6308ce279&amp;source=constructor" width="100%" height="600" frameBorder="0"></iframe>
+    : <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Af8548a9ac2b91e766c9ea5c2a693b8e2bd4dfbe80847319c865b9c81e838316a&amp;source=constructor" width="100%" height="600" frameBorder="0"></iframe> ;
     const address = (activeMap === "spb") ? "Санкт-Петербург, Невский проспект, 108В" : "Москва, ул.Шарикоподшипниковская, 22";
 
     return (
