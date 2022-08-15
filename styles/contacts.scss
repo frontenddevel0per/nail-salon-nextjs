@@ -31,6 +31,7 @@
     iframe {
         border-radius: 50px;
         padding-bottom: 24px;
+        // pointer-events: none; /* заблочим взаимодействие с картой к херам)))) */
     }
 
     &__mapinfo {
