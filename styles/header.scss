@@ -11,7 +11,7 @@
 
         &-nav {
             display: flex;
-            justify-content: space-around;
+            justify-content: center;
             list-style-type: none;
 
             font-size: 20px;
@@ -19,6 +19,7 @@
 
             li {
                 padding-right: 2em;
+                padding-left: 2em;
                 border-right: 1px solid black;
                 -moz-user-select: none;
                 -khtml-user-select: none;
@@ -40,6 +41,10 @@
                 }:hover::after {
                     width: 100%;
                 }
+            }
+
+            #firstli {
+                padding-left: 0;
             }
 
             :last-child {
@@ -203,15 +208,6 @@
     .header__main {
         &-nav {
             font-size: 13px;
-            justify-content: center;
-
-            li {
-                padding-left: 2em;
-            }
-
-            #firstli {
-                padding-left: 0;
-            }
         }
 
         h1 {
