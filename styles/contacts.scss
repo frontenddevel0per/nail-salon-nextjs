@@ -1,6 +1,6 @@
 .contacts {
     background: #807EE3;
-    height: 728px;
+    height: 600px;
 
     &__header {
         width: 143px;
@@ -28,10 +28,20 @@
         }
     }
 
-    iframe {
+    &__map {
+        width: 100vw;
+        height: 500px;
         border-radius: 50px;
-        padding-bottom: 24px;
-        // pointer-events: none; /* заблочим взаимодействие с картой к херам)))) */
+        background-size: cover;
+        background-position: center;
+    }
+
+    .spb {
+        background-image: url("../resources/img/manicute-spb.jpg");
+    }
+
+    .msk {
+        background-image: url("../resources/img/manicute-msk.jpg");
     }
 
     &__mapinfo {
@@ -41,7 +51,7 @@
 
         z-index: 2;
         position: relative;
-        top: -500px;
+        top: -450px;
         left: 200px;
 
 
@@ -91,7 +101,7 @@
         padding-bottom: 20px;
 
         &__mapinfo {
-            margin: 0 auto;
+            margin: 24px auto 0 auto;
             z-index: 1;
             position: static;
             top: 0;
@@ -101,9 +111,15 @@
 }
 
 @media all and (max-width: 768px) {
-    .contacts__mapinfo {
-        width: 80vw;
-        max-width: 420px;
-        word-wrap: break-word;
+    .contacts {
+        &__map {
+            height: 350px;
+        }
+
+        &__mapinfo {
+            width: 80vw;
+            max-width: 420px;
+            word-wrap: break-word;
+        }
     }
 }

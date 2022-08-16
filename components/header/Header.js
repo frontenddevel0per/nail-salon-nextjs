@@ -2,7 +2,6 @@ import { Link, animateScroll as scroll } from "react-scroll";
 import Image from 'next/image';
 
 import logo from '../../resources/img/logo.png';
-import art from '../../resources/img/art.png';
 import headerpreview from '../../resources/img/header-preview.png';
 
 const Header = () => {

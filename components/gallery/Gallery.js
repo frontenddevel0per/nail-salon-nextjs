@@ -12,7 +12,7 @@ const Gallery = () => {
         let arr = [];
         for (let i = 0; i < imagesCount; i++) {
             if (i < DB.length) {
-                arr.push(<Image key={i} src={DB[i].src} alt={DB[i].alt} width={250} height={250} />)
+                arr.push(<Image key={i} src={DB[i].src} alt={DB[i].alt} width={250} height={250} objectFit="cover"/>)
             }
         }
         setImagesArr(arr);
