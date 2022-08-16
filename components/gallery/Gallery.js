@@ -4,8 +4,9 @@ import { useState, useEffect } from 'react';
 import DB from '../../resources/DB/photos.json';
 
 const Gallery = () => {
+    const PAGINATION_STEP = 8;
 
-    const [imagesCount, setImagesCount] = useState(8);
+    const [imagesCount, setImagesCount] = useState(PAGINATION_STEP);
     const [imagesArr, setImagesArr] = useState([]);
 
     useEffect(() => {
@@ -24,7 +25,7 @@ const Gallery = () => {
             <div className="gallery__collage">
                 {imagesArr}
             </div>
-            {(imagesCount < DB.length) ? <button onClick={() => setImagesCount(imagesCount+8)}>Показать ещё</button> : null}
+            {(imagesCount < DB.length) ? <button onClick={() => setImagesCount(imagesCount+PAGINATION_STEP)}>Показать ещё</button> : null}
         </div>
     )
 }
