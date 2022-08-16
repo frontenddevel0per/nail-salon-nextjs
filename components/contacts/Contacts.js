@@ -1,14 +1,21 @@
 import { useState } from 'react';
-import Image from 'next/image';
-
-import tgicon from '../../resources/img/tg-icon.png';
-import insticon from '../../resources/img/inst-icon.png';
-import whatsappicon from '../../resources/img/whatsapp-icon.png';
-import vkicon from '../../resources/img/vk-icon.png';
+import Icon from '../icon/Icon';
 
 const Contacts = ({setModal}) => {
     const [activeMap, setActiveMap] = useState("spb");
-    const address = (activeMap === "spb") ? "Санкт-Петербург, Невский проспект, 108В" : "Москва, ул.Шарикоподшипниковская, 22";
+    let address, mapClasses;
+
+    switch (activeMap) {
+        case "msk":
+            address = "Москва, ул.Шарикоподшипниковская, 22";
+            mapClasses = "contacts__map msk";
+            break;
+        case "spb":
+            address = "Санкт-Петербург, Невский проспект, 108В";
+            mapClasses = "contacts__map spb";
+            break;
+        }
+    ;
 
     return (
         <div className="contacts" id="contacts">
@@ -16,23 +23,15 @@ const Contacts = ({setModal}) => {
                 <button className={(activeMap === "spb") ? "active" : null} onClick={() => setActiveMap("spb")}>СПб</button>
                 <button className={(activeMap === "msk") ? "active" : null} onClick={() => setActiveMap("msk")}>Мск</button>
             </div>
-            <div className={(activeMap === "spb") ? "contacts__map spb" : "contacts__map msk"}></div>
+            <div className={mapClasses}></div>
             <div className="contacts__mapinfo">
                 <h1>_ManiCute_</h1>
                 <p>{address}<br/>Пн-Вс, с 9:00 до 21:00</p>
                 <div className="contacts__mapinfo-icons">
-                    <a href="https://telegram.com">
-                        <Image src={tgicon} alt="tg-icon"/>
-                    </a>
-                    <a href="https://instagram.com">
-                        <Image src={insticon} alt="inst-icon"/>
-                    </a>
-                    <a href="https://whatsapp.com">
-                        <Image src={whatsappicon} alt="whatsapp-icon"/>
-                    </a>
-                    <a href="https://vk.com">
-                        <Image src={vkicon} alt="vk-icon"/>
-                    </a>
+                    <Icon site="tg" width="35" height="35" />
+                    <Icon site="inst" width="35" height="35" />
+                    <Icon site="whatsapp" width="35" height="35" />
+                    <Icon site="vk" width="35" height="35" />
                 </div>
                 <button onClick={() => setModal(true)}>Записаться</button>
             </div>
