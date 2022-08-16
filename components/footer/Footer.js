@@ -13,10 +13,10 @@ const Footer = () => {
                         <Image src={logo} alt="logo" />
                     </div>
                     <div className="footer__main-part-socials">
-                        <Icon site="tg" width="25" height="25" />
-                        <Icon site="inst" width="25" height="25" />
-                        <Icon site="whatsapp" width="25" height="25" />
-                        <Icon site="vk" width="25" height="25" />
+                        <Icon site="tg" width="25" />
+                        <Icon site="inst" width="25" />
+                        <Icon site="whatsapp" width="25" />
+                        <Icon site="vk" width="25" />
                     </div>
                     <p className="footer__main-part-copyright">(с) 2022 manicute</p>
                 </div>

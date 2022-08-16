@@ -1,4 +1,4 @@
-const Icon = ({site, width = 50, height = 50}) => {
+const Icon = ({site, width = 50, height = width}) => {
     let iconPath, iconId, iconUrl;
 
     switch (site) {

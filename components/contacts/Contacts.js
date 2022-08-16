@@ -28,10 +28,10 @@ const Contacts = ({setModal}) => {
                 <h1>_ManiCute_</h1>
                 <p>{address}<br/>Пн-Вс, с 9:00 до 21:00</p>
                 <div className="contacts__mapinfo-icons">
-                    <Icon site="tg" width="35" height="35" />
-                    <Icon site="inst" width="35" height="35" />
-                    <Icon site="whatsapp" width="35" height="35" />
-                    <Icon site="vk" width="35" height="35" />
+                    <Icon site="tg" width="35" />
+                    <Icon site="inst" width="35" />
+                    <Icon site="whatsapp" width="35" />
+                    <Icon site="vk" width="35" />
                 </div>
                 <button onClick={() => setModal(true)}>Записаться</button>
             </div>
