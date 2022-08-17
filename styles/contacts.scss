@@ -1,0 +1,125 @@
+.contacts {
+    background: #807EE3;
+    height: 600px;
+
+    &__header {
+        width: 143px;
+        height: 24px;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        padding: 40px 0;
+
+        button {
+            width: 47px;
+            height: 24px;
+            border: none;
+    
+            font-size: 20px;
+            letter-spacing: 0.07em;
+            text-transform: uppercase;
+
+            color: #B4B4B4;
+            background: none;
+        }
+
+        .active {
+            color: #FFF;
+        }
+    }
+
+    &__map {
+        width: 100vw;
+        height: 500px;
+        border-radius: 50px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .spb {
+        background-image: url("../resources/img/manicute-spb.webp");
+    }
+
+    .msk {
+        background-image: url("../resources/img/manicute-msk.webp");
+    }
+
+    &__mapinfo {
+        width: 420px;
+        border-radius: 47px;
+        padding: 16px;
+
+        z-index: 2;
+        position: relative;
+        top: -450px;
+        left: 200px;
+
+
+        background: linear-gradient(180deg, rgba(188, 186, 253, 1) 0%, #71BFF0 100%);
+        box-shadow: -7.78321px -7.78321px 31.1329px rgba(255, 255, 255, 0.85), 7.78321px 7.78321px 31.1329px -3.11329px rgba(91, 115, 134, 0.78), inset 12.4531px 14.0098px 14.0098px rgba(255, 255, 255, 0.33), inset -9.33986px -10.8965px 12.4531px rgba(0, 0, 0, 0.05);
+        
+        h1 {
+            font-size: 30px;
+            font-weight: 700;
+            letter-spacing: 0.07em;
+        }
+
+        p {
+            font-size: 23px;
+            letter-spacing: 0.07em;
+        }
+
+        &-icons {
+            width: 171px;
+            display: flex;
+            justify-content: space-between;
+            margin: 0 auto;
+            padding-bottom: 16px;
+        }
+
+        button {
+            width: 200px;
+            height: 50px;
+            border: none;
+            border-radius: 96px;
+
+            font-size: 20px;
+            letter-spacing: 0.07em;
+            transition: 0.25s all ease;
+
+            &:hover {
+                filter: drop-shadow(0px 0px 6px rgba(0, 0, 0, 0.25));
+                background: linear-gradient(165.75deg, #BDD8EC 7.77%, #EAEAEA 94.11%);
+            }
+        }
+    }
+}
+
+@media all and (max-width: 1300px) {
+    .contacts {
+        height: auto;
+        padding-bottom: 20px;
+
+        &__mapinfo {
+            margin: 24px auto 0 auto;
+            z-index: 1;
+            position: static;
+            top: 0;
+            left: 0;
+        }
+    }
+}
+
+@media all and (max-width: 768px) {
+    .contacts {
+        &__map {
+            height: 350px;
+        }
+
+        &__mapinfo {
+            width: 80vw;
+            max-width: 420px;
+            word-wrap: break-word;
+        }
+    }
+}
