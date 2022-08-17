@@ -7,7 +7,7 @@
 - React Hooks
 - SCSS
 
-### [Ссылка на сайт](https://nail-salon-nextjs.vercel.app/)
+### [Ссылка на сайт](https://nail-salon-nextjs-git-typescript-frontenddevel0per.vercel.app/)
 
 Что интересного тут есть:
 - использование useRef хука для модального окна, чтобы при клике не на него модалка закрывалась
