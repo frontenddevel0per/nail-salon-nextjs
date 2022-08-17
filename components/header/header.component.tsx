@@ -1,10 +1,11 @@
 import Image from "next/image"
 import { Link } from "react-scroll"
+import { FC } from "react"
 
 import logo from '../../resources/img/logo.png'
 import headerpreview from '../../resources/img/header-preview.png'
 
-const Header = () => (
+const Header: FC = () => (
     <div className="header">
         <div className="header__main">
             <ul className="header__main-nav">

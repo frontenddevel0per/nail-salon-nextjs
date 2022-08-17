@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useRef, FC } from "react";
 import Image from 'next/image';
 import closeicon from '../../resources/img/close-icon.png';
 
@@ -6,15 +6,17 @@ type ModalProps = {
     setModal: (isActive: boolean) => void;
 }
 
-const ModalWindow = ({setModal}: ModalProps) => {
+const ModalWindow: FC<ModalProps> = ({setModal}) => {
     const modal = useRef(null);
 
+    const closeModal = (e) => {
+        if (e.target === modal.current ) {
+            setModal(false);
+        }   
+    }
+
     return (
-        <div className="modalWindow" id="modalWindow" onClick={(e) => {
-            if (e.target === modal.current ) {
-                setModal(false);
-            }   
-        }} ref={modal}>
+        <div className="modalWindow" id="modalWindow" onClick={closeModal} ref={modal}>
             <div className="modalWindow__main">
                  <div className="closeIcon" onClick={() => setModal(false)}>
                     <Image src={closeicon} alt="close-icon" />

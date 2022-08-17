@@ -1,13 +1,13 @@
 import type { NextPage } from 'next'
 import { useState, useEffect } from 'react';
 
-import Preloader from '../components/preloader/Perloader';
-import Header from '../components/header/Header';
-import Services from '../components/services/Services';
-import Gallery from '../components/gallery/Gallery';
-import Contacts from '../components/contacts/Contacts';
-import Footer from '../components/footer/Footer';
-import ModalWindow from '../components/modalWindow/ModalWindow';
+import Preloader from '../components/preloader/perloader.component';
+import Header from '../components/header/header.component';
+import Services from '../components/services/services.component';
+import Gallery from '../components/gallery/gallery.component';
+import Contacts from '../components/contacts/contacts.component';
+import Footer from '../components/footer/footer.component';
+import ModalWindow from '../components/modalWindow/modalWindow.component';
 
 const Home: NextPage = () => {
   

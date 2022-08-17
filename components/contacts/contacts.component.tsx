@@ -1,22 +1,23 @@
 import { useState } from 'react';
-import Icon from '../icon/Icon';
-import FC from 'react';
+import Icon from '../icon/icon.component';
+import { FC } from 'react';
+import { SPB, MSK } from './contacts.constants';
 
 type ContactsProps = {
     setModal: (isOpened: boolean) => void;
 }
 
-const Contacts = ({setModal}: ContactsProps) => {
+const Contacts: FC<ContactsProps> = ({setModal}) => {
     const [activeMap, setActiveMap] = useState<string>("spb");
     let address: string = "", mapClasses: string = "";
 
     switch (activeMap) {
         case "msk":
-            address = "Москва, ул.Шарикоподшипниковская, 22";
+            address = MSK.address;
             mapClasses = "contacts__map msk";
             break;
         case "spb":
-            address = "Санкт-Петербург, Невский проспект, 108В";
+            address = SPB.address;
             mapClasses = "contacts__map spb";
             break;
         }

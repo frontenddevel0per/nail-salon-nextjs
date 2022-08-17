@@ -1,10 +1,11 @@
 import Image from 'next/image';
-import { Link, animateScroll as scroll } from "react-scroll";
-import Icon from '../icon/Icon';
+import { Link } from "react-scroll";
+import { FC } from 'react';
+import Icon from '../icon/icon.component';
 
 import logo from '../../resources/img/logo.png';
 
-const Footer = () => (
+const Footer: FC = () => (
     <div className="footer">
         <div className="footer__main">
             <div className="footer__main-part">

@@ -1,11 +1,10 @@
 import Image from 'next/image';
-import { useState, useEffect, ReactNode } from 'react';
+import { useState, useEffect, ReactNode, FC } from 'react';
+import { PAGINATION_STEP } from './gallery.constants';
 
 import DB from '../../resources/DB/photos.json';
 
-const Gallery = () => {
-    const PAGINATION_STEP : number = 8;
-
+const Gallery: FC = () => {
     const [imagesCount, setImagesCount] = useState(PAGINATION_STEP);
     const [imagesArr, setImagesArr] = useState<ReactNode[]>([]);
 
