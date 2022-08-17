@@ -9,7 +9,7 @@ type ModalProps = {
 const ModalWindow: FC<ModalProps> = ({setModal}) => {
     const modal = useRef(null);
 
-    const closeModal = (e: React.SyntheticEvent<EventTarget>): void => {
+    const closeModal = (e: React.MouseEvent<HTMLDivElement>): void => {
         if (e.target === modal.current ) {
             setModal(false);
         }   
