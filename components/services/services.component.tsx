@@ -1,9 +1,9 @@
 import Image from 'next/image';
 import { FC } from 'react';
 
-import left_img from '../../resources/img/services-left.png';
-import center_img from'../../resources/img/services-center.png';
-import right_img from '../../resources/img/services-right.png';
+import left_img from '../../resources/img/services-left.webp';
+import center_img from'../../resources/img/services-center.webp';
+import right_img from '../../resources/img/services-right.webp';
 
 type ServicesProps = {
     setModal: (isOpened: boolean) => void;

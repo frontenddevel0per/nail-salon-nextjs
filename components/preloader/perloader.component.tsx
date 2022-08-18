@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import logo from '../../resources/img/logo.png';
+import logo from '../../resources/img/logo.webp';
 import { FC } from 'react';
 
 const Preloader: FC = () => (

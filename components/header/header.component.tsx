@@ -2,7 +2,7 @@ import Image from "next/image"
 import { Link } from "react-scroll"
 import { FC } from "react"
 
-import logo from '../../resources/img/logo.png'
+import logo from '../../resources/img/logo.webp'
 import headerpreview from '../../resources/img/header-preview.png'
 
 const Header: FC = () => (

@@ -3,7 +3,7 @@ import { Link } from "react-scroll";
 import { FC } from 'react';
 import Icon from '../icon/icon.component';
 
-import logo from '../../resources/img/logo.png';
+import logo from '../../resources/img/logo.webp';
 
 const Footer: FC = () => (
     <div className="footer">
