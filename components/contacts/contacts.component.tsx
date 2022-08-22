@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Icon from '../icon/icon.component';
 import { FC } from 'react';
 import { SPB, MSK } from './contacts.constants';
+import { TG, WA, VK } from '../icon/icon.constant';
 
 type ContactsProps = {
     setModal: (isOpened: boolean) => void;
@@ -34,10 +35,16 @@ const Contacts: FC<ContactsProps> = ({setModal}) => {
                 <h1>_ManiCute_</h1>
                 <p>{address}<br/>Пн-Вс, с 9:00 до 21:00</p>
                 <div className="contacts__mapinfo-icons">
-                    <Icon name="tg" size={35} />
-                    <Icon name="inst" size={35} />
-                    <Icon name="whatsapp" size={35} />
-                    <Icon name="vk" size={35} />
+                    <a href={TG.url}>
+                        <Icon name="tg" size={35} />
+                    </a>
+                    <a href={WA.url}>
+                        <Icon name="whatsapp" size={35} />
+                    </a>
+                    <a href={VK.url}>
+                        <Icon name="vk" size={35} />
+                    </a>
+                    {/* <Icon name="inst" size={35} /> */}
                 </div>
                 <button onClick={() => setModal(true)}>Записаться</button>
             </div>

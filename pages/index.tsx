@@ -15,6 +15,7 @@ const Home: NextPage = () => {
   const [showPreloader, setShowPreloader] = useState<boolean>(true);
   const [pageLoaded, setPageLoaded] = useState<boolean>(false);
   const [scrollWidth, setScrollWidth] = useState<number | null>(null);
+  const [isSafari, setIsSafari] = useState<boolean>(null);
 
   const calcScrollbar = () : void => {
     let div = document.createElement('div');
@@ -34,6 +35,9 @@ const Home: NextPage = () => {
     calcScrollbar();
     setPageLoaded(true);
     setTimeout(() => setShowPreloader(false), 2500);
+    if (/constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || (typeof safari !== 'undefined' && safari.pushNotification))) {
+      document.querySelector('body')?.classList.add('safari')
+    }
   }, [])
 
   if (isModalActive) {
@@ -46,10 +50,10 @@ const Home: NextPage = () => {
 
   return (
     <>
-      <Header/>
+      <Header isSafari={isSafari} />
       <Services setModal={setModal}/>
       <Gallery/>
-      <Contacts setModal={setModal}/>
+      <Contacts setModal={setModal} isSafari={isSafari} />
       <Footer/>
       {isModalActive ? <ModalWindow setModal={setModal}/> : null}
       {showPreloader ? <Preloader/> : null}

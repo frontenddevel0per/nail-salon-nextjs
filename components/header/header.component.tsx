@@ -7,7 +7,13 @@ import { WHATSAPP_LINK, TG_LINK, VK_LINK } from "./header.constants"
 import logo from '../../resources/img/logo.webp'
 import glitchart from '../../resources/img/glitchimg.webp'
 
-const Header: FC = () =>{
+type HeaderProps = {
+    isSafari: boolean
+}
+
+const Header: FC<HeaderProps> = ({isSafari}) =>{
+    const buttonsClasses = isSafari ? "header__main-buttons safari" : "header__main-buttons"
+
     useEffect(() => {
         PowerGlitch.glitch('.glitch', {
             timing: {
@@ -59,7 +65,7 @@ const Header: FC = () =>{
                 <h1>_MANICUTE_</h1>
                 <h3>Студия неординарных ногтей,<br/>услуги бровиста в Москве и<br/>Санкт-Петербурге</h3>
                 <div className="header__main-logo"><Image src={logo} alt="logo" width="120" height="120" /></div>
-                <div className="header__main-buttons">
+                <div className={buttonsClasses} >
                     <a href={WHATSAPP_LINK}>
                         <button><p>Написать в WhatsApp</p></button>
                     </a>

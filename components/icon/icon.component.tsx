@@ -40,9 +40,7 @@ const Icon: FC<IconProps> = ({name, size = 50}) => {
             height={`${size}px`}
             id={iconId}
         >
-            <a href={iconUrl}>
-                <path d={iconPath} />
-            </a>
+            <path d={iconPath} />
         </svg>
     )
 }

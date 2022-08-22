@@ -1,6 +1,17 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     padding: 16px 0px 16px 16px;
 
     background: #807EE3;
@@ -10,8 +21,12 @@
         max-width: 500px;
 
         &-nav {
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            justify-content: center;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
             list-style-type: none;
 
             font-size: 20px;
@@ -22,8 +37,9 @@
                 padding-left: 2em;
                 border-right: 1px solid black;
                 -moz-user-select: none;
-                -khtml-user-select: none;
-                user-select: none;   
+                -webkit-user-select: none;
+                    -ms-user-select: none;
+                        user-select: none;   
 
                 a {
                     color: #000;
@@ -36,7 +52,10 @@
                     display: block;
                     width: 0;
                     height: 2px;
+                    background: -o-linear-gradient(211.41deg, #5FD3FF -18.96%, rgba(99, 214, 255, 0) 54.42%), -o-linear-gradient(353.47deg, #FFAE88 -3.19%, #8F93EA 105.27%);
                     background: linear-gradient(238.59deg, #5FD3FF -18.96%, rgba(99, 214, 255, 0) 54.42%), linear-gradient(96.53deg, #FFAE88 -3.19%, #8F93EA 105.27%);
+                    -webkit-transition: width .3s;
+                    -o-transition: width .3s;
                     transition: width .3s;
                 }:hover::after {
                     width: 100%;
@@ -75,9 +94,16 @@
         }
 
         &-buttons {
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            flex-direction: column;
-            justify-content: space-between;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                    justify-content: space-between;
             text-align: left;
             gap: 16px;
             padding-left: 48px;
@@ -88,25 +114,29 @@
                 button {
                     width: 303px;
                     height: 62px;
+                    background: -o-linear-gradient(211.41deg, #5FD3FF -18.96%, rgba(99, 214, 255, 0) 54.42%), -o-linear-gradient(353.47deg, #FFAE88 -3.19%, #8F93EA 105.27%);
                     background: linear-gradient(238.59deg, #5FD3FF -18.96%, rgba(99, 214, 255, 0) 54.42%), linear-gradient(96.53deg, #FFAE88 -3.19%, #8F93EA 105.27%);
                     border: none;
                     border-radius: 17px;
                     text-align: center;
-                    transition: 0.25s all ease;
+                    // -webkit-transition: 0.25s all ease;
+                    // -o-transition: 0.25s all ease;
+                    // transition: 0.25s all ease;
     
                     font-size: 20px;
 
                     &:hover {
-                        background: linear-gradient(238.59deg, #5FD3FF -18.96%, rgba(99, 214, 255, 0) 54.42%), linear-gradient(96.53deg, #FF8C57 -3.19%, #4F57FB 105.27%);                    transition: 0.5s all ease;
+                        background: -o-linear-gradient(211.41deg, #5FD3FF -18.96%, rgba(99, 214, 255, 0) 54.42%), -o-linear-gradient(353.47deg, #FF8C57 -3.19%, #4F57FB 105.27%);
+                        background: linear-gradient(238.59deg, #5FD3FF -18.96%, rgba(99, 214, 255, 0) 54.42%), linear-gradient(96.53deg, #FF8C57 -3.19%, #4F57FB 105.27%);                    -webkit-transition: 0.5s all ease;                    -o-transition: 0.5s all ease;                    transition: 0.5s all ease;
                         color: white;
+                        -webkit-filter: drop-shadow(0px 0px 14px rgba(0, 0, 0, 0.3));
+                                filter: drop-shadow(0px 0px 14px rgba(0, 0, 0, 0.3));
                     }
 
                     p {
                         margin: 0;
                     }
                 }
-            }:hover {
-                filter: drop-shadow(0px 0px 14px rgba(0, 0, 0, 0.3));
             }
         }
     }
@@ -123,9 +153,15 @@
         }
 
         &-art {
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            justify-content: center;
-            align-items: center;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
             width: 785px;
             height: 808px;
             background: url('../../resources/img/art2.webp');
@@ -156,8 +192,13 @@
 @media all and (max-width: 1300px) {
     
     .header {
-        flex-direction: column;
-        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         padding: 0;
 
         &__main {
@@ -174,7 +215,9 @@
             }
 
             &-buttons {
-                align-items: center;
+                -webkit-box-align: center;
+                    -ms-flex-align: center;
+                        align-items: center;
                 padding: 0;
             }
 
