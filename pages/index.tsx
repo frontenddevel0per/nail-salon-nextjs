@@ -1,5 +1,6 @@
 import type { NextPage } from 'next'
 import { useState, useEffect } from 'react';
+import { isSafari } from 'react-device-detect';
 
 import Preloader from '../components/preloader/perloader.component';
 import Header from '../components/header/header.component';
@@ -34,7 +35,7 @@ const Home: NextPage = () => {
     calcScrollbar();
     setPageLoaded(true);
     setTimeout(() => setShowPreloader(false), 2500);
-    if (/constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || (typeof safari !== 'undefined' && safari.pushNotification))) {
+    if (isSafari) {
       document.querySelector('body')?.classList.add('safari')
     }
   }, [])
