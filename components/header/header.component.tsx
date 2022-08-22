@@ -7,13 +7,7 @@ import { WHATSAPP_LINK, TG_LINK, VK_LINK } from "./header.constants"
 import logo from '../../resources/img/logo.webp'
 import glitchart from '../../resources/img/glitchimg.webp'
 
-type HeaderProps = {
-    isSafari: boolean
-}
-
-const Header: FC<HeaderProps> = ({isSafari}) =>{
-    const buttonsClasses = isSafari ? "header__main-buttons safari" : "header__main-buttons"
-
+const Header: FC = () =>{
     useEffect(() => {
         PowerGlitch.glitch('.glitch', {
             timing: {

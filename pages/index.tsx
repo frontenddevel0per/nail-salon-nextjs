@@ -15,7 +15,6 @@ const Home: NextPage = () => {
   const [showPreloader, setShowPreloader] = useState<boolean>(true);
   const [pageLoaded, setPageLoaded] = useState<boolean>(false);
   const [scrollWidth, setScrollWidth] = useState<number | null>(null);
-  const [isSafari, setIsSafari] = useState<boolean>(null);
 
   const calcScrollbar = () : void => {
     let div = document.createElement('div');
@@ -50,10 +49,10 @@ const Home: NextPage = () => {
 
   return (
     <>
-      <Header isSafari={isSafari} />
+      <Header/>
       <Services setModal={setModal}/>
       <Gallery/>
-      <Contacts setModal={setModal} isSafari={isSafari} />
+      <Contacts setModal={setModal}/>
       <Footer/>
       {isModalActive ? <ModalWindow setModal={setModal}/> : null}
       {showPreloader ? <Preloader/> : null}
