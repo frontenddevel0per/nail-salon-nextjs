@@ -59,7 +59,7 @@ const Header: FC = () =>{
                 <h1>_MANICUTE_</h1>
                 <h3>Студия неординарных ногтей,<br/>услуги бровиста в Москве и<br/>Санкт-Петербурге</h3>
                 <div className="header__main-logo"><Image src={logo} alt="logo" width="120" height="120" /></div>
-                <div className={buttonsClasses} >
+                <div className="header__main-buttons" >
                     <a href={WHATSAPP_LINK}>
                         <button><p>Написать в WhatsApp</p></button>
                     </a>
