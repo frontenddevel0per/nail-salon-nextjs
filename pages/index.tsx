@@ -1,4 +1,5 @@
 import type { NextPage } from 'next'
+import Head from 'next/head';
 import { useState, useEffect } from 'react';
 import { isSafari } from 'react-device-detect';
 
@@ -50,6 +51,11 @@ const Home: NextPage = () => {
 
   return (
     <>
+      <Head>
+        <meta name='keywords' content='маникюр, ногти, маникюр 2022, педикюр, ногти маникюр, маникюр лето, маникюр лето 2022, маникюр дизайн, дизайн ногтей, ногти 2022, ногти дизайн новинки, manicute, _manicute_' />
+        <meta name='description' content='Студия неординарных ногтей, услуги бровиста в Москве и Санкт-Петербурге' />
+        <meta name="yandex-verification" content="34defb518339da6a" />
+      </Head>
       <Header/>
       <Services setModal={setModal}/>
       <Gallery/>
