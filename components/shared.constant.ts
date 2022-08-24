@@ -4,3 +4,5 @@ export enum SOCIAL_LINKS {
     TG = "https://t.me/MmaniCute",
     VK = "https://vk.com/manicutee"
 }
+
+export const SCROLL_DURATION = 700

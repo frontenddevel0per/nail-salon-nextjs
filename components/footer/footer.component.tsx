@@ -2,7 +2,9 @@ import Image from 'next/image';
 import { Link } from "react-scroll";
 import { FC } from 'react';
 import Icon from '../icon/icon.component';
-import { SOCIAL_LINKS } from '../shared.constant'; 
+import { SOCIAL_LINKS } from '../shared.constant';
+import { ICONS_SIZE } from './footer.constant';
+import { SCROLL_DURATION } from '../shared.constant';
 
 import logo from '../../resources/img/logo.webp';
 
@@ -15,13 +17,13 @@ const Footer: FC = () => (
                 </div>
                 <div className="footer__main-part-socials">
                 <a href={SOCIAL_LINKS.TG}>
-                        <Icon name="tg" size={25} />
+                        <Icon name="tg" size={ICONS_SIZE} />
                     </a>
                     <a href={SOCIAL_LINKS.WA}>
-                        <Icon name="whatsapp" size={25} />
+                        <Icon name="whatsapp" size={ICONS_SIZE} />
                     </a>
                     <a href={SOCIAL_LINKS.VK}>
-                        <Icon name="vk" size={25} />
+                        <Icon name="vk" size={ICONS_SIZE} />
                     </a>
                 </div>
                 <p className="footer__main-part-copyright">(с) 2022 manicute</p>
@@ -34,7 +36,7 @@ const Footer: FC = () => (
                         spy={true}
                         smooth={true}
                         offset={0}
-                        duration={700}>
+                        duration={SCROLL_DURATION}>
                             Прайс
                     </Link>
                 </p>
@@ -44,7 +46,7 @@ const Footer: FC = () => (
                         spy={true}
                         smooth={true}
                         offset={0}
-                        duration={700}>
+                        duration={SCROLL_DURATION}>
                             Галерея
                     </Link>
                 </p>
@@ -54,7 +56,7 @@ const Footer: FC = () => (
                         spy={true}
                         smooth={true}
                         offset={0}
-                        duration={700}>
+                        duration={SCROLL_DURATION}>
                             Контакты
                     </Link>
                 </p>

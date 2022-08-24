@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Icon from '../icon/icon.component';
 import { FC } from 'react';
-import { ADDRESSES } from './contacts.constants';
+import { ADDRESSES, ICONS_SIZE } from './contacts.constants';
 import { SOCIAL_LINKS } from '../shared.constant'
 
 type ContactsProps = {
@@ -36,13 +36,13 @@ const Contacts: FC<ContactsProps> = ({setModal}) => {
                 <p>{address}<br/>Пн-Вс, с 9:00 до 21:00</p>
                 <div className="contacts__mapinfo-icons">
                     <a href={SOCIAL_LINKS.TG}>
-                        <Icon name="tg" size={35} />
+                        <Icon name="tg" size={ICONS_SIZE} />
                     </a>
                     <a href={SOCIAL_LINKS.WA}>
-                        <Icon name="whatsapp" size={35} />
+                        <Icon name="whatsapp" size={ICONS_SIZE} />
                     </a>
                     <a href={SOCIAL_LINKS.VK}>
-                        <Icon name="vk" size={35} />
+                        <Icon name="vk" size={ICONS_SIZE} />
                     </a>
                 </div>
                 <button onClick={() => setModal(true)}>Записаться</button>

@@ -1,5 +1,5 @@
 import { FC } from 'react'
-import { SOCIALS } from './icon.constant'
+import { SHAPES } from './icon.constant'
 
 type IconProps = {
     name: string,
@@ -7,24 +7,21 @@ type IconProps = {
 }
 
 const Icon: FC<IconProps> = ({name, size = 50}) => {
-    let iconPath: string = "", iconId: string = "", iconUrl: string = "";
+    let iconPath: string = ""
+    const iconId: string = `${name}Icon`
 
     switch (name) {
         case "tg":
-            iconPath = SOCIALS.TG.path;
-            iconId = SOCIALS.TG.id;
+            iconPath = SHAPES.TG;
             break;
         case "inst":
-            iconPath = SOCIALS.INST.path;
-            iconId = SOCIALS.INST.id;
+            iconPath = SHAPES.INST;
             break;
         case "whatsapp":
-            iconPath = SOCIALS.WA.path;
-            iconId = SOCIALS.WA.id;
+            iconPath = SHAPES.WA;
             break;
         case "vk":
-            iconPath = SOCIALS.VK.path;
-            iconId = SOCIALS.VK.id;
+            iconPath = SHAPES.VK;
             break;
     }
 

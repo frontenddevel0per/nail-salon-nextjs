@@ -2,7 +2,7 @@ import Image from "next/future/image"
 import { Link } from "react-scroll"
 import { FC, useEffect } from "react"
 import { PowerGlitch } from "powerglitch"
-import { SOCIAL_LINKS } from "../shared.constant"
+import { SOCIAL_LINKS, SCROLL_DURATION } from "../shared.constant"
 import { LOGO_SIZE } from "./header.constant"
 
 import logo from '../../resources/img/logo.webp'
@@ -32,7 +32,7 @@ const Header: FC = () =>{
                             spy={true}
                             smooth={true}
                             offset={0}
-                            duration={700}>
+                            duration={SCROLL_DURATION}>
                                 Услуги
                         </Link>
                     </li>
@@ -42,7 +42,7 @@ const Header: FC = () =>{
                             spy={true}
                             smooth={true}
                             offset={0}
-                            duration={700}>
+                            duration={SCROLL_DURATION}>
                                 Галерея
                         </Link>
                     </li>
@@ -52,7 +52,7 @@ const Header: FC = () =>{
                             spy={true}
                             smooth={true}
                             offset={0}
-                            duration={700}>
+                            duration={SCROLL_DURATION}>
                                 Контакты
                         </Link>
                     </li>
@@ -75,7 +75,7 @@ const Header: FC = () =>{
                             spy={true}
                             smooth={true}
                             offset={0}
-                            duration={700}>
+                            duration={SCROLL_DURATION}>
                         <button><p>Услуги</p></button>
                     </Link>
                     <a href="#">
