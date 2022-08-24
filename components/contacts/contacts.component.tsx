@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import Icon from '../icon/icon.component';
 import { FC } from 'react';
-import { SPB, MSK } from './contacts.constants';
-import { TG, WA, VK } from '../icon/icon.constant';
+import { ADDRESSES } from './contacts.constants';
+import { SOCIAL_LINKS } from '../shared.constant'
 
 type ContactsProps = {
     setModal: (isOpened: boolean) => void;
@@ -14,11 +14,11 @@ const Contacts: FC<ContactsProps> = ({setModal}) => {
 
     switch (activeMap) {
         case "msk":
-            address = MSK.address;
+            address = ADDRESSES.MSK;
             mapClasses = "contacts__map msk";
             break;
         case "spb":
-            address = SPB.address;
+            address = ADDRESSES.SPB;
             mapClasses = "contacts__map spb";
             break;
         }
@@ -35,16 +35,15 @@ const Contacts: FC<ContactsProps> = ({setModal}) => {
                 <h1>_ManiCute_</h1>
                 <p>{address}<br/>Пн-Вс, с 9:00 до 21:00</p>
                 <div className="contacts__mapinfo-icons">
-                    <a href={TG.url}>
+                    <a href={SOCIAL_LINKS.TG}>
                         <Icon name="tg" size={35} />
                     </a>
-                    <a href={WA.url}>
+                    <a href={SOCIAL_LINKS.WA}>
                         <Icon name="whatsapp" size={35} />
                     </a>
-                    <a href={VK.url}>
+                    <a href={SOCIAL_LINKS.VK}>
                         <Icon name="vk" size={35} />
                     </a>
-                    {/* <Icon name="inst" size={35} /> */}
                 </div>
                 <button onClick={() => setModal(true)}>Записаться</button>
             </div>

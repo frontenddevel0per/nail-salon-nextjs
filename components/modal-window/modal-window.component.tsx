@@ -1,6 +1,7 @@
 import { useRef, FC } from "react";
 import Image from 'next/image';
 import closeicon from '../../resources/img/close-icon.png';
+import { SOCIAL_LINKS } from '../shared.constant'
 
 type ModalProps = {
     setModal: (isActive: boolean) => void;
@@ -24,12 +25,12 @@ const ModalWindow: FC<ModalProps> = ({setModal}) => {
                 <div className="modalWindow__main-wrapper">
                     <h1>Запишись там,<br/>где тебе удобно</h1>
                     <div className="modalWindow__main-wrapper-buttons">
-                        <a href="https://telegram.com">
+                        <a href={SOCIAL_LINKS.TG}>
                             <button>
                                 <p>Telegram</p>
                             </button>
                         </a>
-                        <a href="https://whatsapp.com">
+                        <a href={SOCIAL_LINKS.WA}>
                             <button>
                                 <p>Whatsapp</p>
                             </button>

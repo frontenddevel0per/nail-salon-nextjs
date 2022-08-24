@@ -8,7 +8,7 @@ import Services from '../components/services/services.component';
 import Gallery from '../components/gallery/gallery.component';
 import Contacts from '../components/contacts/contacts.component';
 import Footer from '../components/footer/footer.component';
-import ModalWindow from '../components/modalWindow/modalWindow.component';
+import ModalWindow from '../components/modal-window/modal-window.component';
 
 const Home: NextPage = () => {
   
@@ -41,10 +41,10 @@ const Home: NextPage = () => {
   }, [])
 
   if (isModalActive) {
-    document.querySelector('body')!.style.overflowY = "hidden";
+    document.querySelector('html')!.style.overflowY = "hidden";
     document.querySelector('body')!.style.marginRight = `${scrollWidth}px`;
   } else if (!isModalActive && pageLoaded) {
-    document.querySelector('body')!.style.overflowY = "visible";
+    document.querySelector('html')!.style.overflowY = "visible";
     document.querySelector('body')!.style.marginRight = "0";
   }
 

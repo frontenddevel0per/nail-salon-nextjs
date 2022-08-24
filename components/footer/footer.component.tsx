@@ -2,7 +2,7 @@ import Image from 'next/image';
 import { Link } from "react-scroll";
 import { FC } from 'react';
 import Icon from '../icon/icon.component';
-import { TG, WA, VK } from '../icon/icon.constant';
+import { SOCIAL_LINKS } from '../shared.constant'; 
 
 import logo from '../../resources/img/logo.webp';
 
@@ -14,16 +14,15 @@ const Footer: FC = () => (
                     <Image src={logo} alt="logo" />
                 </div>
                 <div className="footer__main-part-socials">
-                <a href={TG.url}>
+                <a href={SOCIAL_LINKS.TG}>
                         <Icon name="tg" size={25} />
                     </a>
-                    <a href={WA.url}>
+                    <a href={SOCIAL_LINKS.WA}>
                         <Icon name="whatsapp" size={25} />
                     </a>
-                    <a href={VK.url}>
+                    <a href={SOCIAL_LINKS.VK}>
                         <Icon name="vk" size={25} />
                     </a>
-                    {/* <Icon name="inst" size={25} /> */}
                 </div>
                 <p className="footer__main-part-copyright">(с) 2022 manicute</p>
             </div>

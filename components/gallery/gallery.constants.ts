@@ -1,3 +1,5 @@
 export const PAGINATION_STEP: number = 8;
 
 export const PLACEHOLDER_BLUR: string = 'iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNs37VrKQAGbQKihVaVegAAAABJRU5ErkJggg=='
+
+export const IMAGE_SIZE = 250;

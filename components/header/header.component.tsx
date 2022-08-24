@@ -2,7 +2,8 @@ import Image from "next/future/image"
 import { Link } from "react-scroll"
 import { FC, useEffect } from "react"
 import { PowerGlitch } from "powerglitch"
-import { WHATSAPP_LINK, TG_LINK, VK_LINK } from "./header.constants"
+import { SOCIAL_LINKS } from "../shared.constant"
+import { LOGO_SIZE } from "./header.constant"
 
 import logo from '../../resources/img/logo.webp'
 import glitchart from '../../resources/img/glitchimg.webp'
@@ -58,15 +59,15 @@ const Header: FC = () =>{
                 </ul>
                 <h1>_MANICUTE_</h1>
                 <h3>Студия неординарных ногтей,<br/>услуги бровиста в Москве и<br/>Санкт-Петербурге</h3>
-                <div className="header__main-logo"><Image src={logo} alt="logo" width="120" height="120" /></div>
+                <div className="header__main-logo"><Image src={logo} alt="logo" width={LOGO_SIZE.SMALL} height={LOGO_SIZE.SMALL} /></div>
                 <div className="header__main-buttons" >
-                    <a href={WHATSAPP_LINK}>
+                    <a href={SOCIAL_LINKS.WA}>
                         <button><p>Написать в WhatsApp</p></button>
                     </a>
-                    <a href={TG_LINK}>
+                    <a href={SOCIAL_LINKS.TG}>
                         <button><p>Подписаться на Telegram</p></button>
                     </a>
-                    <a href={VK_LINK}>
+                    <a href={SOCIAL_LINKS.VK}>
                         <button><p>Подписаться на VK</p></button>
                     </a>
                     <Link 
@@ -86,7 +87,7 @@ const Header: FC = () =>{
                 </div>
             </div>
             <div className="header__images">
-                <div className="header__images-logo"><Image src={logo} alt="logo" width="288" height="288" /></div>
+                <div className="header__images-logo"><Image src={logo} alt="logo" width={LOGO_SIZE.BIG} height={LOGO_SIZE.BIG} /></div>
                 <div className="header__images-art">
                     <div className="header__images-art-wrapper">
                         <Image src={glitchart} alt="glitchart" className="glitch" />
