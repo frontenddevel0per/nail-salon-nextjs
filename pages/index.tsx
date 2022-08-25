@@ -52,8 +52,11 @@ const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <meta name='keywords' content='маникюр, ногти, маникюр 2022, педикюр, ногти маникюр, маникюр лето, маникюр лето 2022, маникюр дизайн, дизайн ногтей, ногти 2022, ногти дизайн новинки, manicute, _manicute_' />
-        <meta name='description' content='Студия неординарных ногтей, услуги бровиста в Москве и Санкт-Петербурге' />
+        <meta name='keywords' content='маникюр, nail, маникюр спб, маникюр мск, маникюр питер, маникюр москва, ногти, маникюр 2022, педикюр, ногти маникюр, маникюр лето, маникюр лето 2022, маникюр дизайн, дизайн ногтей, ногти 2022, ногти дизайн новинки, manicute, _manicute_' />
+        <meta name='description' content='Студия неординарных ногтей, услуги бровиста в Москве и Санкт-Петербурге' key="desc" />
+        <meta property='og:title' content='Студия _Manicute_' />
+        <meta property='og:description' content='Студия неординарных ногтей, услуги бровиста в Москве и Санкт-Петербурге' />
+        <meta property='og:image' content='/img/logo.webp' />
         <meta name="yandex-verification" content="34defb518339da6a" />
       </Head>
       <Header/>
