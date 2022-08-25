@@ -12,7 +12,7 @@ const Gallery: FC = () => {
         let arr = [];
         for (let i = 0; i < imagesCount; i++) {
             if (i < DB.length) {
-                arr.push(<Image key={i} src={DB[i].src} alt={DB[i].alt} width={IMAGE_SIZE} height={IMAGE_SIZE} objectFit="cover" placeholder="blur" blurDataURL={PLACEHOLDER_BLUR} />)
+                arr.push(<Image key={i} src={DB[i].src} alt={DB[i].alt} width={IMAGE_SIZE} height={IMAGE_SIZE} objectFit="cover" placeholder="blur" blurDataURL={`data:image/webp;base64,${PLACEHOLDER_BLUR}`} />)
             }
         }
         setImagesArr(arr);
