@@ -56,7 +56,7 @@ const Home: NextPage = () => {
         <meta name='description' content='Студия неординарных ногтей, услуги бровиста в Москве и Санкт-Петербурге' key="desc" />
         <meta property='og:title' content='Студия _Manicute_' />
         <meta property='og:description' content='Студия неординарных ногтей, услуги бровиста в Москве и Санкт-Петербурге' />
-        <meta property='og:image' content='/img/logo.webp' />
+        <meta property='og:image' content='https://i.ibb.co/hB5kmPx/logo.webp' />
         <meta name="yandex-verification" content="34defb518339da6a" />
       </Head>
       <Header/>
