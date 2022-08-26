@@ -78,12 +78,17 @@ const Header: FC = () =>{
                             duration={SCROLL_DURATION}>
                         <button><p>Услуги</p></button>
                     </Link>
-                    <a href="#">
+                    {/* <a href="#">
                         <button><p>Акции</p></button>
-                    </a>
-                    <a href="#">
+                    </a> */}
+                    <Link
+                            to="contacts"
+                            spy={true}
+                            smooth={true}
+                            offset={0}
+                            duration={SCROLL_DURATION}>
                         <button><p>Как добраться</p></button>
-                    </a>
+                    </Link>
                 </div>
             </div>
             <div className="header__images">
