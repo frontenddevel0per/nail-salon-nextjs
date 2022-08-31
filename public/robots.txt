@@ -1,0 +1,11 @@
+# Block all crawlers for /privacy-policy
+User-agent: *
+Disallow: /privacy-policy
+
+# Block all crawlers for /agreement
+User-agent: *
+Disallow: /agreement
+
+# Allow all crawlers
+User-agent: *
+Allow: /
