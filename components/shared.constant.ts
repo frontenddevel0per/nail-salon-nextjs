@@ -6,3 +6,5 @@ export enum SOCIAL_LINKS {
 }
 
 export const SCROLL_DURATION = 700
+
+export const SITE_LINK = "manicute.ru"

@@ -1,5 +1,6 @@
 import Image from 'next/image';
-import { Link } from "react-scroll";
+import { Link as ScrollLink } from "react-scroll";
+import Link from 'next/link';
 import { FC } from 'react';
 import Icon from '../icon/icon.component';
 import { SOCIAL_LINKS } from '../shared.constant';
@@ -31,41 +32,45 @@ const Footer: FC = () => (
             <div className="footer__main-part">
                 <h3>Главная</h3>
                 <p>
-                    <Link 
+                    <ScrollLink 
                         to="services"
                         spy={true}
                         smooth={true}
                         offset={0}
                         duration={SCROLL_DURATION}>
                             Прайс
-                    </Link>
+                    </ScrollLink>
                 </p>
                 <p>
-                    <Link 
+                    <ScrollLink 
                         to="gallery"
                         spy={true}
                         smooth={true}
                         offset={0}
                         duration={SCROLL_DURATION}>
                             Галерея
-                    </Link>
+                    </ScrollLink>
                 </p>
                 <p>
-                    <Link 
+                    <ScrollLink 
                         to="contacts"
                         spy={true}
                         smooth={true}
                         offset={0}
                         duration={SCROLL_DURATION}>
                             Контакты
-                    </Link>
+                    </ScrollLink>
                 </p>
             </div>
             <div className="footer__main-part">
                 <h3>Помощь</h3>
                 <p>Карта</p>
-                <p>Пользовательское соглашение</p>
-                <p>Политика конфиденциальности</p>
+                <Link href="/agreement">
+                    <p>Пользовательское соглашение</p>
+                </Link>
+                <Link href="/privacy-policy">
+                    <p>Политика конфиденциальности</p>
+                </Link>
             </div>
         </div>
     </div>
