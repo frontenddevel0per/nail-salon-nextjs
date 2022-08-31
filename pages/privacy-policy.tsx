@@ -1,10 +1,14 @@
 import type { NextPage } from 'next'
+import Head from 'next/head'
 import PrivacyPolicy from '../components/privacy-policy/privacy-policy.component'
 
 const PrivacyPolicyPage: NextPage = () => {
   return (
     <>
-        <PrivacyPolicy/>
+      <Head>
+        <title>Политика конфиденциальности</title>
+      </Head>
+      <PrivacyPolicy/>
     </>
   )
 }

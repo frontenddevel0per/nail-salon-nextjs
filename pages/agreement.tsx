@@ -1,10 +1,14 @@
 import type { NextPage } from 'next'
+import Head from 'next/head'
 import Agreement from '../components/agreement/agreement.component'
 
 const AgreementPage: NextPage = () => {
   return (
     <>
-        <Agreement/>
+      <Head>
+        <title>Пользовательское соглашение</title>
+      </Head>
+      <Agreement/>
     </>
   )
 }
