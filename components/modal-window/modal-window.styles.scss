@@ -28,6 +28,7 @@
             position: relative;
             top: -80px;
             right: -150px;
+            cursor: pointer;
         }
 
         &-wrapper {
@@ -48,6 +49,7 @@
                     border: none;
                     border-radius: 17px;
                     transition: 0.25s all ease;
+                    cursor: pointer;
 
                     &:hover {
                         background: linear-gradient(238.59deg, #5FD3FF -18.96%, rgba(99, 214, 255, 0) 54.42%), linear-gradient(96.53deg, #FF8C57 -3.19%, #4F57FB 105.27%);

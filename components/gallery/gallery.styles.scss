@@ -19,13 +19,17 @@
         font-size: 25px;
         border: none;
         background-color: inherit;
-        color: #747474;
-    }:hover {
-        color: #AAA;
+        color: #fd72ab;
         transition: 0.25s all ease;
-    }:active {
-        color: #525252;
-        transition: cubic-bezier(1, 0, 0, 1) 0.25s all ease;
+        cursor: pointer;
+
+        &:hover {
+            color: #ef3c86;
+        }
+
+        &:active {
+            color: #525252;
+        }
     }
 }
 

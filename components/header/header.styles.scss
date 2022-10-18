@@ -14,7 +14,7 @@
             justify-content: space-between;
     padding: 16px 0px 16px 16px;
 
-    background: #807EE3;
+    background: #fd72ab;
 
     &__main {
         padding-left: 10em;
@@ -36,6 +36,7 @@
                 padding-right: 2em;
                 padding-left: 2em;
                 border-right: 1px solid black;
+                cursor: pointer;
                 -moz-user-select: none;
                 -webkit-user-select: none;
                     -ms-user-select: none;
@@ -52,8 +53,9 @@
                     display: block;
                     width: 0;
                     height: 2px;
-                    background: -o-linear-gradient(211.41deg, #5FD3FF -18.96%, rgba(99, 214, 255, 0) 54.42%), -o-linear-gradient(353.47deg, #FFAE88 -3.19%, #8F93EA 105.27%);
-                    background: linear-gradient(238.59deg, #5FD3FF -18.96%, rgba(99, 214, 255, 0) 54.42%), linear-gradient(96.53deg, #FFAE88 -3.19%, #8F93EA 105.27%);
+                    // background: -o-linear-gradient(211.41deg, #5FD3FF -18.96%, rgba(99, 214, 255, 0) 54.42%), -o-linear-gradient(353.47deg, #FFAE88 -3.19%, #8F93EA 105.27%);
+                    // background: linear-gradient(238.59deg, #5FD3FF -18.96%, rgba(99, 214, 255, 0) 54.42%), linear-gradient(96.53deg, #FFAE88 -3.19%, #8F93EA 105.27%);
+                    background: #FFF;
                     -webkit-transition: width .3s;
                     -o-transition: width .3s;
                     transition: width .3s;
@@ -119,6 +121,7 @@
                     border: none;
                     border-radius: 17px;
                     text-align: center;
+                    cursor: pointer;
                     // -webkit-transition: 0.25s all ease;
                     // -o-transition: 0.25s all ease;
                     // transition: 0.25s all ease;
