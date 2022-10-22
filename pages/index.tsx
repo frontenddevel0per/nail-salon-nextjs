@@ -73,8 +73,8 @@ const Home: NextPage = () => {
       <Gallery />
       <Contacts setModal={setModal} />
       <Footer />
-      {isModalActive ? <ModalWindow setModal={setModal} /> : null}
-      {showPreloader ? <Preloader /> : null}
+      {isModalActive && <ModalWindow setModal={setModal} />}
+      {showPreloader && <Preloader />}
     </>
   );
 };
