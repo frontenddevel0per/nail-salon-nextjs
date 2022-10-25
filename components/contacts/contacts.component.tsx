@@ -45,6 +45,7 @@ const Contacts: FC<ContactsProps> = ({ setModal }) => {
           width="100%"
           height="500"
           frameBorder="0"
+          loading="lazy"
         />
       ) : (
         <iframe
@@ -52,6 +53,7 @@ const Contacts: FC<ContactsProps> = ({ setModal }) => {
           width="100%"
           height="500"
           frameBorder="0"
+          loading="lazy"
         />
       )}
       <div className="contacts__mapinfo">
