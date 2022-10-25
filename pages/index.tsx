@@ -66,7 +66,6 @@ const Home: NextPage = () => {
           content="Студия неординарных ногтей, услуги бровиста в Москве и Санкт-Петербурге"
         />
         <meta property="og:image" content="img/logo.jpg" />
-        <meta name="yandex-verification" content="34defb518339da6a" />
       </Head>
       <Header />
       <Services setModal={setModal} />
