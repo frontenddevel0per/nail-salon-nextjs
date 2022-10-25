@@ -35,7 +35,7 @@
 
 @media all and (max-width: 1300px) {
     .gallery__collage {
-        grid-template-columns: 200px 200px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
         justify-content: center;
     }
 }
@@ -48,6 +48,7 @@
 
 @media all and (max-width: 450px) {
     .gallery__collage {
-        grid-template-columns: 100px 100px;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
     }
 }

@@ -1,4 +1,4 @@
-import Image from "next/future/image";
+import Image from "next/image";
 import { useState, useEffect, ReactNode, FC } from "react";
 import {
   PAGINATION_STEP,
@@ -24,8 +24,8 @@ const Gallery: FC = () => {
             width={IMAGE_SIZE}
             height={IMAGE_SIZE}
             placeholder="blur"
+            objectFit="cover"
             blurDataURL={`data:image/webp;base64,${PLACEHOLDER_BLUR}`}
-            style={{ objectFit: "cover" }}
           />
         );
       }
